@@ -1,4 +1,6 @@
 package VirtualStore.VSSprint3.Model;
 
-public class Enum_RoleName {
+public enum Enum_RoleName {
+    Admin,
+    Operario
 }
