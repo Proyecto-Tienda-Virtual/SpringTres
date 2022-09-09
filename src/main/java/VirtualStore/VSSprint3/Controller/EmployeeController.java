@@ -43,7 +43,7 @@ public class EmployeeController {
     }
 
     //PATCH
-    @PatchMapping("/users/{id}")
+    @PatchMapping("/user/{id}")
     public Employee updateEmployee (@PathVariable Long id, @RequestBody Employee employee){
         Employee employee1 = iServiceEmployee.getbyId(id);
 
