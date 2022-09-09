@@ -19,5 +19,6 @@ public interface IServiceEmployee {
     public void delete(Long id);
 
 
-    //Actualizar un usuario por el id-falta
+    //Actualizar un usuario por el id
+    public Employee updateEmployee(Employee employee);
 }

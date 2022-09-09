@@ -47,7 +47,12 @@ public class ImpleServiceEmployee  implements IServiceEmployee {
         iRespositoryEmployee.deleteById(id);
 
     }
+    //Para actualizar un usuario por el id
+    @Override
+    public Employee updateEmployee(Employee employee) {
+        return iRespositoryEmployee.save(employee);
+    }
 
 
-    //Para actualizar un usuario por el id-falta
+
 }

@@ -1,5 +1,7 @@
 package VirtualStore.VSSprint3.Model;
 
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -36,11 +38,11 @@ public class Employee {
     private List<Transaction> transactions;
     @Column
     @DateTimeFormat(pattern = "yyyy-MM-dd")
-    @CreatedDate
+    @CreationTimestamp
     private Date createdAt;
     @Column
     @DateTimeFormat(pattern = "yyyy-MM-dd")
-    @LastModifiedDate
+    @UpdateTimestamp
     private Date updateAt;
 
     // Constructor Vacio
